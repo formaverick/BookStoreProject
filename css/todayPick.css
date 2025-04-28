@@ -1,0 +1,215 @@
+/* 오늘의 선택 */
+@charset "utf-8";
+
+.today_pick {
+    width: 100%;
+    height: 314px;
+    margin-top: 50px;
+}
+
+.todayPickTitle {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* 상단 Title 공통 */
+#firstTitle {
+    float: left;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+#selectBrand {
+    margin-left: 10px;
+}
+
+#selectBrand li {
+    font-size: 12px;
+    float: left;
+    cursor: pointer;
+    margin-left: 15px;
+    color: #767676;
+}
+
+#selectBrand li:hover {
+    color: #474c98;
+    font-weight: 600;
+}
+
+#selectBrand li.active {
+    color: #474c98;
+    font-weight: 600;
+}
+
+#moreRight {
+    margin-left: 690px;
+    font-size: 14px;
+    color: #767676;
+    font-weight: 600;
+}
+
+#moreRight:hover {
+    color: #292929;
+    cursor: pointer;
+}
+
+/* 상단 Title 공통 끝*/
+
+.todayPickBox {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: visible;
+}
+
+.todayPickBox>i {
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #767676;
+    background-color: #fff;
+    position: absolute;
+    margin: 0 10px 0 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.todayPicBtn_L {
+    left: -50px;
+}
+
+.todayPicBtn_R {
+    right: -60px;
+}
+
+/* 오늘의 선택 왼쪽 슬라이드 */
+.todayPic_left {
+    width: 700px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.todayPic_left > ul {
+    width: 7000px;
+    height: 100%;
+}
+
+.todayPic_left:hover .booktitle {
+    border-bottom: 1px solid #000;
+}
+
+.todayPic_left ul li {
+    width: 700px;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todayBoxImg {
+    width: 180px;
+    height: 100%;
+}
+
+.todayBoxImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.todayBoxDetail {
+    width: 510px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todayBoxDetail span {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.todayBoxDetail .booktitle {
+    width: fit-content;
+    font-weight: 700;
+}
+
+.todayBoxDetail .author {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.todayBoxDetail .publisher::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icon/pupleicon.png");
+    background-repeat: no-repeat;
+    contain: cover;
+    background-size: 14px 14px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.todayBoxDetail .publisher {
+    font-size: 14px;
+    line-height: 22px;
+    color: #474C98;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.todayBoxDetail .bookinfo {
+    height: 60px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    font-weight: 400;
+}
+
+/* 오늘의 선택 오른쪽 슬라이드 */
+.todayPic_right {
+    width: 540px;
+    height: 230px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.todayPic_right > ul {
+    width: 9720px;
+    height: 100%;
+}
+
+.todayPic_right ul li {
+    width: 160px;
+    height: 230px;
+    margin-right: 20px;
+    float: left;
+}
+
+.todayPic_right .todayBoxImg {
+    width: 160px;
+    height: 230px;
+}
+
+.todayPic_right ul li .todayBoxImg img {
+    width: 160px;
+    height: 230px;
+    
+    border-radius: 10px;
+}

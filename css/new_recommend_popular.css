@@ -1,0 +1,168 @@
+/* 신작, 출판사 추천,사람들이 많이 찾고있어요 */
+@charset "utf-8";
+
+.new {
+    width: 100%;
+    height: 378px;
+    margin-top: 80px;
+}
+
+.Title {
+    width: 1250px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new>.Title>span {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #767676;
+    font-weight: 600;
+}
+
+.new>.Title>span:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+
+.Title i:hover {
+    background-color: #76767661;
+}
+
+.Content {
+    width: 100%;
+    height: 334px;
+    margin-top: 10px;
+}
+
+.Content ul {
+    width: 1250px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Content ul li {
+    float: left;
+    width: 180px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.Content ul li:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.Content>ul>li>img {
+    width: 180px;
+    height: 260px;
+    cursor: pointer;
+}
+
+.Content>ul>li>span {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 출판사 추천 */
+.recommend {
+    width: 100%;
+    height: 378px;
+    margin-top: 80px;
+}
+
+.recommend>.Title>span {
+    margin-right: 20px;
+    font-size: 10px;
+    color: #767676;
+}
+
+/* 사람들이 많이 찾고있어요 */
+.popular {
+    width: 100%;
+    height: 480px;
+    margin-top: 50px;
+    float: left;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 75px;
+}
+
+.popular>i {
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #767676;
+    background-color: #fff;
+    position: absolute;
+    margin: 0 10px 0 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.popular>i:hover {
+    background-color: #76767661;
+}
+
+.popularContent {
+    width: 100%;
+    height: 480px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.popularBookListSlide {
+    width: 3020px;
+    height: 480px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popularBookListSlide li {
+    width: 310px;
+    height: 400px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.popularBookListSlide li:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.popularBookListSlide li img {
+    width: 310px;
+    height: 400px;
+}
+
+.popularBookListSlide>li>span {
+    margin-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.middlebannerSlide {
+    width: 1250px;
+    height: 180px;
+    margin-top: 80px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}

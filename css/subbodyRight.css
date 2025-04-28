@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+.detailContentsRight{
+    width: 350px;
+    height: auto;
+}
+
+/* 기분 좋은 발견 */
+.recommendEvent {
+    width: 100%;
+    height: 210px;
+}
+
+.recommendEvent > div:first-child {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TopMoreicon {
+    font-size: 13px;
+    color: #595959;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.TopMoreicon::after {
+    content: " ";
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-image: url("../img/subimgs/moreview_icon.png");
+    background-size: 5px 9px;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.recommendWrap {
+    width: 100%;
+    height: 160px;
+    margin-top: 25px;
+}
+
+.recommendWrap div{
+    width: 100%;
+    height: 155px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.recommendWrap ul {
+    width: 1390px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommendWrap ul li {
+    width: 370px;
+    height: 100%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.recommendWrap ul li:last-child {
+    margin-right: 0px;
+}
+
+.recommendWrap ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.recommendWrap div::-webkit-scrollbar {
+    height: 7px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+
+.recommendWrap div::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1;
+    border-radius: 10px;
+}
+
+/* 이 분야의 베스트 */
+.RightBest {
+    width: 100%;
+    height: 865px;
+    margin-top: 50px;
+}
+
+.RightBest > div:first-child {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.RightBestBox {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.RightBestBox img {
+    float: left;
+    width: 100px;
+    height: 100%;
+}
+
+.RightBestBox > div {
+    float: left;
+    width: 180px;
+    height: 100%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.badge_green {
+    width: 20px;
+    height: 19px;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #4dac27;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 6px 0;
+}
+
+.badge_gray {
+    width: 20px;
+    height: 19px;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #767676;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 6px 0;
+}
+
+
+.titleofBook {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.writerofBook {
+    color:#595959;
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: 10px;
+}
+
+.RightBestBox > div > div {
+    margin-top: 10px;
+}
+
+.bookSale {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #4dac27;
+}
+
+.bookPrice {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.bookPrice > span {
+    font-weight: 400;
+}
+
+/* 이 분야의 신간 */
+.RightNew {
+    width: 100%;
+    height: 865px;
+    margin-top: 50px;
+}
+
+.RightNew > div:first-child {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.RightNew span:first-child {
+    margin-top: 35px;
+}
+
+/* 이미지 배너 */
+.RightBanner {
+    width: 100%;
+    height: 185px;
+    margin-top: 50px;
+}
+
+.RightBanner div{
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.RightBanner ul {
+    width: 1050px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.RightBanner ul li {
+    width: 350px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.RightBanner ul li:last-child {
+    margin-right: 0px;
+}
+
+.RightBanner ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.RightBanner div::-webkit-scrollbar {
+    height: 7px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+
+.RightBanner div::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1;
+    border-radius: 10px;
+}
+
+/* 이 책의 연관 상품 */
+.Rightbook{
+    width: 100%;
+    height: 230px;
+    margin-top: 50px;
+}
+
+.Rightbook > .RightBestBox {
+    width: 100%;
+    height: 150px;
+    margin-top: -3px;
+}
+
+.Rightbook span:first-child {
+    margin-top: 35px;
+}

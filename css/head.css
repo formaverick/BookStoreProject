@@ -1,0 +1,968 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 헤드 시작 */
+header {
+    width: 100%;
+    height: 270px;
+}
+
+#top_banner {
+    width: 100%;
+    height: 70px;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+#top_banner>img {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+/* 상단 브랜드 메뉴 */
+.topMenuWrap {
+    width: 100%;
+    height: 45px;
+}
+
+.topMenu {
+    width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgBar {
+    width: 900px;
+    margin: 12px 0 0 -30px;
+}
+
+.topMenu>img:first-child {
+    z-index: 3;
+    position: relative;
+}
+
+.imgBar>li {
+    float: left;
+    position: relative;
+    font-size: 13px;
+    color: #fff;
+}
+
+.imgBar li span {
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.imgBar li:nth-child(5) span{
+    color:#595959
+}
+
+.imgBar li:nth-child(6) span{
+    color:#767676;
+}
+
+.imgBar>li>img {
+    width: 130px;
+    height: 35px;
+    margin: -22px;
+    z-index: 1;
+}
+
+.imgBar>li:hover {
+    cursor: pointer;
+}
+
+#topMenu>img:first-child {
+    width: 260px;
+    height: 45px;
+    z-index: 3;
+}
+
+.imgBar>li>span {
+    z-index: 3;
+    position: absolute;
+    left: 19px;
+    top: 5px;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 12px;
+    margin: 0 3px;
+}
+
+#moreBrand {
+    color: grey;
+    width: 180px;
+    position: relative;
+}
+
+.login {
+    display: flex;
+    justify-content: space-around;
+    width: 320px;
+    height: 45px;
+    align-items: center;
+    font-size: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* 상단 브랜드 메뉴 끝 */
+
+/* 헤드 바디 */
+#topwrap {
+    width: 1250px;
+    height: 155px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#logo2 {
+    width: 180px;
+    height: 66px;
+    float: left;
+    margin: 20px 20px;
+    background-color: #fff;
+}
+
+.search {
+    width: 560px;
+    height: 50px;
+    border: 1px solid #b5b5b5;
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 28px;
+    padding: 0 16px;
+    position: relative;
+}
+
+.search.active {
+    border: 1px solid #000;
+}
+
+.custom-select {
+    position: relative;
+    margin-right: 10px;
+}
+
+.selected {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.arrow {
+    transition: transform 0.2s ease;
+}
+
+.custom-select.open .arrow {
+    transform: rotate(180deg);
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: -5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.select-options li {
+    padding: 12px 14px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.select-options li:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.custom-select.open .select-options {
+    display: block;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search i.fa-magnifying-glass {
+    cursor: pointer;
+    color: #000;
+}
+
+.myPage {
+    width: 100px;
+    height: 100px;
+    margin-left: 390px;
+}
+
+.myPage>img {
+    float: right;
+    margin-top: 25px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    filter: drop-shadow(0px 3px 6px #2e7803);
+}
+
+.myPage>i {
+    float: left;
+    margin-top: 38px;
+    font-size: 25px;
+    color: #b5b5b5;
+    cursor: pointer;
+}
+
+/* 헤드 하단 카테고리 */
+.menuBar {
+    width: 1250px;
+    height: 45px;
+    display: flex;
+    position: absolute;
+    float: left;
+    margin-top: 100px;
+}
+
+.menuBar .navMenu {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.menuBar .navMenu > li {
+    width: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menuBar > .navMenu > li:last-of-type {
+    background-color: #d3d3d3;
+    color: #575757;
+}
+
+/* 헤드 하단 카테고리 왼쪽 */
+.menuBar_left {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.menuBar_left li.pointGreen {
+    color: #3c9a17;
+}
+
+.menuBar_left li {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #595959;
+    cursor: pointer;
+}
+
+#menu_icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* 버튼 클릭 카테고리 */
+.navBox {
+    width: 1240px;
+    height: 720px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 20;
+    display: none;
+}
+
+.nav_loc{
+    position: absolute;
+    top: 50px;
+}
+.fixed{
+    position:fixed;
+    top:81px;
+    margin-left: -20px;       
+}
+
+.navBox .navBoxTitle {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.navBox .navBoxTitle > div {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.backgroundGrey {
+    background-color: #ddd;
+    color: #595959;
+}
+
+.navBoxMain {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.navBoxMain ul {
+    width: 2400px;
+    height: 100%;
+}
+
+/* 카테고리 전체보기 */
+.navBoxMain ul .categoryAll {
+    width: 1240px;
+    height: 100%;
+}
+
+.categoryAll .categoryTop {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-bottom: 1px solid #767676;
+}
+
+.categoryTop li {
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #767676;
+    font-weight: 400;
+    margin-left: 50px;
+    padding: 0 20px 0 20px;
+}
+
+.categoryTop li.active {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.categoryAll .categoryMain {
+    width: 4800px;
+    height: 600px;
+}
+
+.categoryMain li {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+}
+
+/* 교보문고 시작 */
+.categoryMain li .selectBox {
+    margin-top: 30px;
+    width: 190px;
+    height: 500px;
+    display: flex;
+    background-color: palegoldenrod;
+}
+
+.categoryMain li .selectBox > ul {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #fff;
+}
+
+.categoryMain li .selectBox > ul > li {
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+    color: #595959;
+    font-weight: 500;
+    margin: 30px 0 0 30px;
+}
+
+.categoryMain li .selectBox > ul > li.active {
+    color: #4248b5;
+    font-weight: 700;
+    border-bottom:1px solid #4248b5;
+}
+
+.categoryMain li .mainBox {
+    margin-top: 30px;
+    width: 750px;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainBox .mainAll {
+    width: 550px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainAll > ul {
+    width: 2200px;
+    height: 100%;
+}
+
+.mainBox .mainAll > ul > li {
+    width: 550px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainAll > ul > li > div {
+    width: 180px;
+    height: 100%;
+}
+
+.koreaAll {
+    width: 180px;
+    height: 30px;
+}
+
+.koreaAll:hover {
+    text-decoration: underline;
+}
+
+.koreaAll > img {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+
+.fontOfTop {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mainAll > ul > li > div > ul {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;      /* 세로 정렬 */
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.mainAll > ul > li > div:not(:first-of-type) > ul {
+    margin-top: 30px;
+}
+
+.mainAll > ul > li > div > ul > li {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+}
+
+.mainAll > ul > li > div > ul > li:hover {
+    text-decoration: underline;
+}
+
+/* 스페셜 코너 */
+.mainBox .mainSpecial {
+    width: 150px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainSpecial ul {
+    width: 600px;
+    height: 100%;
+}
+
+.mainSpecial ul li {
+    width: 150px;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSpecial ul li div {
+    width: 150px;
+    height: 30px;
+    cursor: text;
+}
+
+.mainSpecial > ul > li > ul {
+    width: 100%;
+    height: 420px;
+}
+
+.mainSpecial > ul > li > ul > li {
+    height: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.mainSpecial > ul > li > ul > li:hover {
+    text-decoration: underline;
+}
+
+.categoryMain li .subBox {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 300px;
+    height: 450px;
+}
+
+.subBox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.categoryMain li .iconMenuBox {
+    margin-top: 500px;
+    margin-left: 190px;
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+}
+
+.iconMenuBox ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.iconMenuBox ul li {
+    display: block;
+    width: 80px;
+    height: 100%;
+}
+
+.iconMenuBox ul li a img {
+    width: 75px;
+    height: 75px;
+}
+
+.iconMenuBox > ul > li > span {
+    font-size: 14px;
+    color: #595959;
+    cursor: pointer;
+}
+/* 교보문고 끝 */
+
+/* eBook 시작 (selectBox - 교보문고) */
+.mainBoxEbook {
+    margin-top: 30px;
+    width: 1000px;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainAll2 {
+    width: 800px;
+    height: 100%;
+}
+
+.mainAll2 > ul {
+    width: 2400px;
+    height: 100%;
+}
+
+.mainAll2 > ul > li {
+    width: 770px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainAll2 > ul > li > ul {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;      /* 세로 정렬 */
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.mainAll2 > ul > li > ul > li:first-child {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.mainAll2 > ul > li > ul > li:not(:first-child){
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+}
+
+.mainAll2 > ul > li > ul > li:hover {
+    text-decoration: underline;
+}
+
+.mainSpecial2 {
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainSpecial2 > ul {
+    width: 600px;
+    height: 100%;
+}
+
+.mainSpecial2 > ul > li {
+    width: 200px;
+    height: 100%;
+    display: flex;
+}
+
+.mainSpecial2 > ul > li > ul {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;      /* 세로 정렬 */
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.mainSpecial2 > ul > li > ul > li:first-child {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.mainSpecial2 > ul > li > ul > li:not(:first-child){
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+}
+
+.mainSpecial2 > ul > li > ul > li:hover {
+    text-decoration: underline;
+}
+
+.iconMenuBox2 {
+    margin-top: 500px;
+    margin-left: 190px;
+    width: 650px;
+    height: 95px;
+    position: absolute;
+}
+
+.iconMenuBox2 ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.iconMenuBox2 ul li {
+    display: block;
+    width: 80px;
+    height: 100%;
+}
+
+.iconMenuBox2 ul li a img {
+    width: 75px;
+    height: 75px;
+}
+
+.iconMenuBox2 > ul > li > span {
+    font-size: 14px;
+    color: #595959;
+    cursor: pointer;
+}
+
+.subBox2 {
+    margin-top: 480px;
+    margin-left: 890px;
+    width: 300px;
+    height: 130px;
+    position: absolute;
+}
+
+.subBox2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* sam */
+.iconMenuBox3 {
+    margin-top: 500px;
+    margin-left: 190px;
+    width: 650px;
+    height: 95px;
+    position: absolute;
+}
+
+.iconMenuBox3 ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.iconMenuBox3 ul li {
+    display: block;
+    width: 80px;
+    height: 100%;
+}
+
+.iconMenuBox3 ul li a img {
+    width: 75px;
+    height: 75px;
+}
+
+.iconMenuBox3 > ul > li > span {
+    font-size: 14px;
+    color: #595959;
+    cursor: pointer;
+}
+
+/* 핫트랙스 (selectBox-교보, mainBoxEbook-Ebook) */
+.categoryMain li .selectBox2 {
+    margin-top: 30px;
+    width: 190px;
+    height: 500px;
+    display: flex;
+}
+
+.categoryMain li .selectBox2 > ul {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.categoryMain li .selectBox2 > ul > li {
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+    color: #595959;
+    font-weight: 500;
+    margin: 30px 0 0 30px;
+}
+
+.categoryMain li .selectBox2 > ul > li.active {
+    color: #da2128;
+    font-weight: 700;
+    border-bottom:1px solid #da2128;
+}
+
+.mainBoxHT {
+    margin-top: 30px;
+    width: 1000px;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainAll3 {
+    width: 1000px;
+    height: 100%;
+}
+
+.mainAll3 > ul {
+    width: 6000px;
+    height: 100%;
+}
+
+.mainAll3 > ul > li {
+    width: 1000px;
+    height: 100%;
+    display: flex;
+}
+
+.mainAll3 > ul > li > ul {
+    width: 250px;
+    height: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;      /* 세로 정렬 */
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.mainAll3 > ul > li > ul > li:first-child {
+    color: #da2128;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.mainAll3 > ul > li > ul > li:not(:first-child){
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+}
+
+.mainAll3 > ul > li > ul > li:hover {
+    color: #da2128;
+    text-decoration: underline;
+}
+
+.iconMenuBox4 {
+    margin-top: 500px;
+    margin-left: 300px;
+    width: 780px;
+    height: 95px;
+    position: absolute;
+}
+
+.iconMenuBox4 ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.iconMenuBox4 ul li {
+    display: block;
+    width: 80px;
+    height: 100%;
+}
+
+.iconMenuBox4 ul li a {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-color: rgba(80, 85, 177, 0.06);
+    border-radius: 10px;
+}
+
+.iconMenuBox4 ul li a img {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.iconMenuBox4 > ul > li > span {
+    font-size: 14px;
+    color: #595959;
+    cursor: pointer;
+}
+
+/* 서비스 전체보기 */
+.seviceAll {
+    width: 1240px;
+    height: 650px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.list_service {
+    width: 1240px;
+    height: 950px;
+    padding: 10px 30px;
+}
+
+.list_service > div {
+    display: block;
+    float: left;
+    width: 160px;
+    height: auto;
+    margin: 10px;
+    text-align: left;
+}
+
+.list_service>div>span {
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.list_service>div>ul {
+    width: 160px;
+    height: auto;
+    margin: 0 0 30px 0;
+}
+
+.list_service>div>ul>li {
+    line-height: 40px;
+    font-size: 15px;
+    color: #595959;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.list_service>div>ul>li:hover{
+    text-decoration: underline;
+}
+
+
+/* 헤드 하단 카테고리 오른쪽 */
+.menuBar_rigth {
+    width: 230px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 12px;
+    color: #767676;
+}
+
+.menuBar_rigth>li {
+    color: #595959;
+    font-size: 14px;
+    cursor: pointer;
+}

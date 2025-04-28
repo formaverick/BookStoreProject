@@ -1,0 +1,172 @@
+/* 베스트 */
+@charset "utf-8";
+
+.kb_best {
+    width: 100%;
+    height: 886px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bestleft {
+    width: 200px;
+    height: 100%;
+}
+
+.bestleft li {
+    font-size: 14px;
+    color : #767676;
+    line-height: 22px;
+    padding-top: 13px;
+    cursor: pointer;
+}
+
+.bestTitle {
+    width: 200px;
+    height: 70px;
+}
+
+.bestTitle h2{
+    float: left;
+    width: 100px;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+.bestTitle span {
+    float: left;
+    margin-top: -24px;
+    margin-left: 100px;
+    font-size: 14px;
+    color: #292929;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.bestCategory {
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.bestleft li:active {
+    color: #474C98;
+    font-weight: 600;
+    border-bottom: 1px solid #474C98;
+}
+
+.steady {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.steady >ul> h2 {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 22px;
+    color: #000;
+    cursor: text;
+}
+
+.bestright {
+    width: 1000px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.bestright ul {
+    width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 190px);
+    grid-auto-rows: auto;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.bestright ul li {
+    overflow: hidden;
+    width: 190px;
+    height: 390px;
+}
+
+.bestright ul li img {
+    width: 190px;
+    height: 270px;
+    display: block;
+}
+
+.bestright ul li div {
+    font-size: 12px;
+    color: #ffff;
+    line-height: 18px;
+    font-weight: 700;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.bestright ul li .bestListTop {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 190px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bestListTop span {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.bestListTop span i {
+    padding: 3px;
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 6px;
+}
+
+.bestListTop span .fa-caret-up {
+    color:#ec1f2d;
+}
+
+.bestListTop .red {
+    color: #ec1f2d;
+}
+
+.bestListTop span .fa-caret-down {
+    color : #314fb9;
+}
+
+.bestListTop .blue {
+    color: #314fb9;
+}
+
+.bestListTop .green {
+    color: #3c9a17;
+}
+
+.bestright .bestListFirst {
+    width: 118px;
+    height: 24px;
+    line-height: 22px;
+    background-color: #3c9a17bb;
+    border-radius: 5px 0 5px 0;
+}
+
+.bestright ul li .bestListbookTitle {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}

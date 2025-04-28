@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+#side_ad{
+    width:100px;
+    height:300px;
+    border:1px solid #ddd;
+    border-radius: 10px;   
+    position:absolute;    
+    top:600px;
+    right:10px;
+    box-sizing: border-box;
+    padding:10px;
+    background-color: #fff;
+}
+
+#side_ad > div {
+    width: 80px;
+    height: 120px;
+    margin: 2px 0px;
+}
+
+#side_ad div:first-of-type a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#side_ad a {
+    font-size: 12px;
+    line-height: 18px;
+    color : #595959;
+}
+
+#side_ad > a:after {
+    content: "+";
+    display: inline-block;
+    font-size: 11px;
+    color: gray;
+    float: right;   
+}
+
+#adBtn {
+    width:100%;
+    height:20%;
+    display: flex;    
+    justify-content: space-between; 
+    align-items: center;
+}
+#adBtn > ul {
+    display: flex;   
+    width:35px;
+    justify-content: space-between; 
+    font-size: 12px;
+    line-height: 18px;
+    color : #595959;   
+}
+#side_ad> div:last-of-type> a > img {
+    width:100%;
+    height:80%;
+    border-radius: 10px;
+}
+#adBtn > i {
+    font-size: 12px;
+    line-height: 18px;
+    color : #595959;
+    cursor: pointer;
+}
+
+#topBtn {
+    border-radius: 50%;
+    background-color:#fff;
+    border:1px solid gray;
+    box-shadow: 4px 4px 4px #5c5b5b34;
+    width:45px;
+    height:45px;
+    cursor: pointer;
+    position: absolute;
+    top:980px;
+    right:37px;
+}

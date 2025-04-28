@@ -1,0 +1,31 @@
+[{
+    "src" : "iconmenu/iconmenu1.svg",
+    "title" : "할인혜택"
+},{
+    "src" : "iconmenu/iconmenu2.svg",
+    "title" : "오늘만특가"
+},{
+    "src" : "iconmenu/iconmenu3.svg",
+    "title" : "디스커버"
+},{
+    "src" : "iconmenu/iconmenu4.svg",
+    "title" : "음반·영상"
+},{
+    "src" : "iconmenu/iconmenu5.svg",
+    "title" : "바로출판"
+},{
+    "src" : "iconmenu/iconmenu6.svg",
+    "title" : "이달의 책"
+},{
+    "src" : "iconmenu/iconmenu7.svg",
+    "title" : "손글씨캠페인"
+},{
+    "src" : "iconmenu/iconmenu8.svg",
+    "title" : "사은품"
+},{
+    "src" : "iconmenu/iconmenu9.svg",
+    "title" : "추천"
+},{
+    "src" : "iconmenu/iconmenu10.svg",
+    "title" : "APP혜택"
+}]

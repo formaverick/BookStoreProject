@@ -1,0 +1,121 @@
+/* event */
+@charset "utf-8";
+
+.event {
+    width: 1250px;
+    height: 224px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    float: left;
+    position: relative;
+    overflow: visible;
+}
+
+.event>i {
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #767676;
+    background-color: #fff;
+    position: absolute;
+    margin: 0 10px 0 0;
+    top: 65%;
+
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.event>i:hover {
+    background-color: #76767661;
+}
+
+.event .todayPicBtn_L {
+    left: -50px;
+}
+
+.event .todayPicBtn_R {
+    right: -60px;
+}
+
+.eventTop {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.eventTop>.selctbrnadEventSlide>li.active {
+    color: #474c98;
+    font-weight: 600;
+}
+
+.eventContent {
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.eventContentWrap {
+    display: flex;
+    width: 3750px;
+    transition: transform 1.0s ease-in-out;
+}
+
+.eventContent ul {
+    width: 1250px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eventContent ul li {
+    width: 374px;
+    height: 170px;
+    border-radius: 30px;
+}
+
+.eventContent ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.slidebanner {
+    width: 100%;
+    height: 150px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.slidebannerWrap {
+    width: 7500px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease-in-out;
+}
+
+.slidebannerWrap>li {
+    width: 1250px;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    flex-shrink: 0;
+}
+
+.slidebannerWrap>li>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}

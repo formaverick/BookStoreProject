@@ -1,0 +1,228 @@
+@charset "utf-8";
+footer {
+    width: 100%;
+    height: 390px;
+}
+
+.footer_header {
+    width: 100%;
+    height: 62px;
+    float: left;
+    margin: 0 100px 0 0px;
+
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.footer_wrapper {
+    width: 1440px;
+    height: 390px;
+
+    margin: 0 auto;
+}
+
+.footer_header .footer_header_wrap {
+    width: 1210px;
+    height: 62px;
+
+    margin: 0 auto;
+}
+
+.footer_header .footer_header_wrap .fheader1 {
+    width: 604px;
+    height: 23px;
+    float: left;
+
+    margin: 20px 0 0 0px;
+    border-right: 1px solid #cccccc;
+}
+
+.footer_header .footer_header_wrap .fheader1>span {
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-left: -15px;
+}
+
+.footer_header .footer_header_wrap .fheader1 .maintxt {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 0 30px;
+    text-decoration: underline;
+}
+
+.footer_header .footer_header_wrap .fheader1 .moretxt {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+    float: right;
+    margin: 0 30px 0 0px;
+}
+
+.footer_header .footer_header_wrap .fheader2 {
+    width: 604px;
+    height: 23px;
+    float: left;
+
+    margin: 20px 0 0 0px;
+}
+
+.footer_header .footer_header_wrap .fheader2>span {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 0 30px;
+}
+
+.footer_header .footer_header_wrap .fheader2 .maintxt {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 0 30px;
+    text-decoration: underline;
+}
+
+.footer_header .footer_header_wrap .fheader2 .moretxt {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+    float: right;
+}
+
+.footer_body {
+    width: 1210px;
+    height: 228px;
+    float: left;
+    margin: 50px 100px 0 100px;
+
+}
+
+.footer_body .footer_logo {
+    width: 1210px;
+    height: 38px;
+}
+
+.footer_body .footer_logo img {
+    width: 130px;
+    height: 60px;
+    margin-top: -20px;
+}
+
+.footer_body .footer_right {
+    width: 825px;
+    height: 160.29px;
+
+    float: left;
+    margin: 10px 0 0 0px;
+}
+
+.footer_body .footer_right .footer_menu_box {
+    width: 825px;
+    height: 22px;
+
+}
+
+.footer_body .footer_right .footer_menu_box a {
+    font-size: 14px;
+    color: #595959;
+    margin: 0 3px 0 0px;
+}
+
+.footer_body .footer_right .footer_menu_box p {
+    font-size: 10px;
+    color: #595959;
+    display: inline;
+}
+
+.footer_body .footer_right .footer_info_box {
+    width: 825px;
+    height: 75px;
+
+    margin: 22px 0 0 0px;
+}
+
+.footer_body .footer_right .footer_info_box p {
+    font-size: 13px;
+    color: #595959;
+    display: inline;
+}
+
+.footer_body .footer_right .footer_info_box a {
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #767676;
+    border-radius: 6px;
+    padding: 3px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.footer_body .footer_right .copyright {
+    width: 825px;
+    height: 18px;
+
+    margin-top: 22px;
+    font-size: 12PX;
+    color: #767676;
+}
+
+.footer_body .footer_left {
+    width: 354.99px;
+    height: 160.29px;
+
+    float: right;
+    margin: 10px 8px 0 0px;
+}
+
+.footer_body .footer_left .footer_service {
+    width: 355px;
+    height: 63px;
+
+}
+
+.footer_body .footer_left .footer_service span {
+    display: inline-block;
+    color: #595959;
+    font-size: 12px;
+}
+
+.footer_body .footer_left .footer_service a {
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #767676;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.footer_body .footer_left .footer_service p {
+    font-size: 12px;
+
+    margin-top: 7px;
+}
+
+.footer_body .footer_left .footer_mark {
+    width: 355px;
+    height: 54px;
+
+    margin-top: 22px;
+}
+
+.footer_body .footer_left .footer_mark a img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.footer_body .footer_left .footer_mark a {
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px;
+    color: #767676;
+}
+
+.footer_body .footer_left .footer_mark p {
+    width: 200px;
+    font-size: 12px;
+    color: #767676;
+    line-height: 18px;
+
+    float: right;
+}

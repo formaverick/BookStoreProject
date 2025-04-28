@@ -1,0 +1,203 @@
+/* casting */
+@charset "utf-8";
+
+.casting {
+    width: 100%;
+    height: 1000px;
+    margin-top: 80px;
+    float: left;
+    overflow: visible;
+    position: relative;
+}
+
+.casting > i {
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #767676;
+    background-color: #fff;
+    position: absolute;
+    margin: 0 10px 0 0;
+    top: 85%;
+
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.casting > i:hover {
+    background-color: rgb(118, 118, 118, 0.3);
+}
+
+#castingBtn_L {
+    left: -60px;
+}
+
+#castingBtn_R {
+    right: -60px;
+}
+
+.castingTop {
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.castingTop h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.castingTop span {
+    margin-top: 10px;
+    height: 20px;
+    font-size: 14px;
+    color: #292929;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.castingslide {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+    overflow: visible;
+}
+
+.castingslide > i {
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #767676;
+    position: absolute;
+    margin: 0 10px 0 0;
+    top: 50%;
+
+    transform: translateY(-80%);
+    z-index: 10;
+}
+
+.castingslide > i:hover {
+    background-color: rgb(118, 118, 118, 0.3);
+}
+
+#castingSlidBtn_L {
+    left: -60px;
+}
+
+#castingSlidBtn_R {
+    right: -60px;
+}
+
+.castingBackground {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.castingBackImg {
+    position: absolute;
+    width:100%;
+    height:500px;
+    background-image: url("../img/casting/castingTop4.jpg");
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    top:5560px;
+    z-index:0;
+}
+
+.castingBackImg > div {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.castingInfo {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.castingInfo span {
+    display: flex;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #fff;
+}
+
+.castingInfo p {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #fff;
+}
+.castingTopimg {
+    width: 650px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.castingTopimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.castingBottom {
+    width: 100%;
+    height: 280px;
+    margin-top: 65px;
+    overflow: hidden;
+}
+
+.castingBottom ul {
+    width: 2500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.castingBottom ul li {
+    width: 230px;
+    height: 100%;
+}
+
+.castingBottom ul li img {
+    width: 230px;
+    height: 230px;
+}
+
+.castingBottom ul li span {
+    display: flex;
+    width: 230px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: hidden;
+    text-overflow: ellipsis;
+}
+
+.castingBottom ul li:hover span {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}

@@ -1,0 +1,74 @@
+/* 교보가 만들었어요 */
+@charset "utf-8";
+
+.madeBook {
+    width: 100%;
+    height: 480px;
+    margin-top: 50px;
+    float: left;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 75px;
+}
+
+.madeBook>i {
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #767676;
+    background-color: #fff;
+    position: absolute;
+    margin: 0 10px 0 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.madeBook>i:hover {
+    background-color: #76767661;
+}
+
+.madeBookContent {
+    width: 100%;
+    height: 480px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.madeBookListSlide {
+    width: 3020px;
+    height: 480px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.madeBookListSlide li {
+    width: 310px;
+    height: 400px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.madeBookListSlide li img {
+    width: 310px;
+    height: 400px;
+}
+
+.madeBookListSlide>li>span {
+    margin-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.madeBookListSlide li:hover span{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}

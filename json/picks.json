@@ -1,0 +1,17 @@
+[{
+    "src" : "picks/picks1.jpg",
+    "small" : "종합추천",
+    "detail" : "마음의 기술"
+},{
+    "src" : "picks/picks2.jpg",
+    "small" : "작가 Pick",
+    "detail" : "젊은작가상 수상"
+},{
+    "src" : "picks/picks3.jpg",
+    "small" : "내 맘대로 Pick",
+    "detail" : "사랑에 대해 내가 아는 모든것"
+},{
+    "src" : "picks/picks4.jpg",
+    "small" : "소울메이트 Pick",
+    "detail" : "소년이 온다"
+}]

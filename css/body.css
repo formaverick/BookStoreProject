@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+/* 바디 시작 */
+#bodywrap {
+    width: 100%;
+    height: auto;
+}
+
+#wrapper {
+    width: 1250px;
+    height: 6700px;
+    margin: 0 auto;
+}
+
+/* 상단 슬라이드+오늘만 특가 */
+.topslide {
+    width: 100%;
+    height: 380px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 메인 슬라이드 시작 */
+.topslide>div {
+    width: 890px;
+    height: 380px;
+    border-radius: 20px;
+}
+
+.mainslide {
+    width: 890px;
+    height: 380px;
+}
+
+.mainSlider {
+    width: 890px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.sliderWrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slideList {
+    display: flex;
+    width: 17800px;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slideList li {
+    width: 890px;
+    height: 100%;
+    flex-shrink: 0;
+    /*슬라이드가 줄어들지 않도록 고정 너비 유지*/
+    z-index: 1;
+}
+
+.slideList li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.mainSliderbottom {
+    width: 172px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 20px;
+    bottom: 20px;
+    gap: 10px;
+    z-index: 10;
+    align-items: center;
+}
+
+.mainSliderbottom i {
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+.sliderStopBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0000004D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderpagebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 137px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #0000004D;
+}
+
+.sliderpagebox span {
+    color: #fff;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* 메인 슬라이드 끝 */
+
+
+
+/* 오늘만 특가 시작 */
+.todaysale {
+    width: 274px;
+    height: 380px;
+    border: 1px solid #a9a9a9;
+    border-radius: 15px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.todaySaleBoxWrap {
+    width: 320px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.todaySaleSlide {
+    display: flex;
+    width: 960px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.todaySaleBox {
+    width: 320px;
+    height: 350px;
+}
+
+.todaySaleimg {
+    width: 100%;
+    height: 200px;
+}
+
+.todaySaleimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.todaySaleDetail {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.todaySaleDetail>p {
+    width: 100%;
+    height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.todaySaleDetail span {
+    font-size: 14px;
+    color: #767676;
+}
+
+.todaySaleBtn {
+    width: 100%;
+    height: 18px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.todaySaleBtn i {
+    color: #767676;
+}
+
+.todaySaleBtn span {
+    padding: 0 10px;
+    color: #767676;
+}
+
+/* 바디 메인 슬라이드 끝 */
+
+
+/* 아이콘 메뉴 */
+.iconbarwrap {
+    width: 100%;
+    height: 96px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_bar {
+    width: 890px;
+    height: 96px;
+}
+
+.icon_bar ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.icon_bar ul li {
+    width: 80px;
+    height: 100%;
+}
+
+.icon_bar ul li a img {
+    width: 77px;
+    height: 77px;
+}
+
+.icon_bar ul li span {
+    font-size: 14px;
+    color: #595959;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.sideimage {
+    width: 274px;
+    height: 96px;
+}
+
+.sideimage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+}
+
+/* 아이콘 메뉴 끝 */
+
+
+/* 중간 이미지 배너1-3 */
+.middlebanner {
+    width: 100%;
+    height: 180px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.middlebanner>a {
+    width: 595px;
+    height: 100%;
+}
+
+.middlebanner a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}

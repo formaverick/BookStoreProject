@@ -1,0 +1,16 @@
+[{
+    "src" : "subSlider/subslider1.jpg",
+    "title" : "오늘만 특가",
+    "name" : "클레어마망 리클라이너",
+    "detail" : "[무료배송] 오늘만 이 가격 51,900원!"
+},{
+    "src" : "subSlider/subslider2.jpg",
+    "title" : "오늘만 특가",
+    "name" : "룸인 시력보호 스탠드",
+    "detail" : "오늘만 이 가격 11,000원!"
+},{
+    "src" : "subSlider/subslider3.jpg",
+    "title" : "오늘만 특가",
+    "name" : "소가죽 정장 자동 벨트",
+    "detail" : "[무료배송] 오늘만 이 가격 13,200원!"
+}]

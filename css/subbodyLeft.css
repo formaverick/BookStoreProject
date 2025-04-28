@@ -1,0 +1,1272 @@
+@charset "utf-8";
+
+.detailContents {
+    width:1250px;
+    height: auto;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailContentsLeft{
+    width: 820px;
+    height: auto;
+}
+
+.detailContentsLeft > * {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* 북카드 */
+.bookCard {
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+}
+
+.bookCard div {
+    width: 100%;
+    height: 410px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.bookCard ul {
+    width: 5000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookCard ul li {
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+}
+.bookCard ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.bookCard div::-webkit-scrollbar {
+    height: 7px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+
+.bookCard div::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1;
+    border-radius: 10px;
+}
+
+/* 공통 class (상단 제목, 책 제목, 작가, 가격) */
+.AllTitle {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-bottom: 18px;
+}
+
+.smallTitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.BookTitle {
+    width: 150px;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* 이거 추가! */
+}
+
+.BookWriter {
+    font-size: 13px;
+    line-height: 19px;
+    color: #595959;
+    margin-top: 3px;
+}
+
+.BookPrice {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+
+/* 함께 구매한 상품 */
+.buyTogether {
+    width: 100%;
+    height: 872px;
+}
+
+.buyTogether > div {
+    padding-top: 35px;
+    padding-left: 35px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+}
+
+.togetherBook {
+    width: 100%;
+    height: 53%;
+    margin-bottom: 20px;
+}
+
+.togetherBookWrap {
+    width: 100%;
+    height: 340px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: 25px;
+    background-color: #fff;
+}
+
+.togetherBookWrap ul {
+    width: 2280px;
+    height: 325px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.togetherBookWrap ul li{
+    width: 150px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.togetherBookWrap ul li img {
+    width: 150px;
+    height: 75%;
+}
+
+.togetherBookInfo {
+    width: 100%;
+    height: 68px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.togetherBookWrap::-webkit-scrollbar {
+    height: 7px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+
+.togetherBookWrap::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1;
+    border-radius: 10px;
+}
+
+.togetherLife {
+    width: 100%;
+    height: 39%;
+}
+
+.togetherLifeWrap {
+    margin-top: 20px;
+    width: 100%;
+    height: 230px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.togetherLifeWrap ul {
+    width: 2280px;
+    height: 215px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.togetherLifeWrap ul li{
+    width: 150px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.togetherLifeWrap ul li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.togetherLifeWrap::-webkit-scrollbar {
+    height: 7px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+
+.togetherLifeWrap::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1;
+    border-radius: 10px;
+}
+
+/* 키워드 Pick */
+.keyPick {
+    width: 100%;
+    height: 280px;
+}
+
+.PickBtn {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.PickBtn span {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 9px 15px;
+    margin-right: 6px;
+    color: #595959;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+}
+
+.PickPic {
+    margin-top: 15px;
+    width: 100%;
+    height: 170px;
+    display: flex;
+}
+
+.PickPicMain {
+    width: 810px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.PickPicMain > ul {
+    width: 810px;
+    height: 100%;
+    display: block;
+}
+
+.PickPicMain > ul > li {
+    float: left;
+    width: 107px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.PickPicMain > ul > li > img {
+    width: 100%;
+    height: 100%;
+}
+
+.PickPic > div:last-child {
+    width: 6%;
+    height: 100%;
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.PickPic > div:last-child span {
+    font-size: 14px;
+    line-height: 22px;
+    color: #767676;
+}
+
+
+.PickPic > div:last-child span::before{
+    content:" ";
+    background:#fff url("../img/subimgs/more_pick_icon") 50% no-repeat;
+    display: block;
+    width:25px;
+    height:25px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background-size: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* 도서 Main 사진 */
+.bookDetailMain {
+    width: 100%;
+    height: 2442px;
+}
+
+.bookDetailMain img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* 책 소개 */
+.bookInfoMain {
+    width: 100%;
+    height: 480px;
+}
+
+.introBook {
+    width: 100%;
+    height: 159px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.introBook p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 28px;
+}
+
+.introBook ul {
+    width: 100%;
+    height: 22px;
+    display: flex;
+}
+
+.introBook ul li {
+    width: auto;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    cursor: pointer;
+    display: flex;
+    padding-right: 12px;
+    align-items: center;
+    position: relative;
+}
+.introBook ul li i {
+    font-size: 13px;
+    color: #595959;
+    margin-left: 12px;
+    padding-top: 2px;
+}
+
+.award {
+    width: 100%;
+    height: 159px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.award p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 28px;
+}
+
+.award ul {
+    width: 100%;
+    height: 22px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.award ul li {
+    width: auto;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    cursor: pointer;
+    display: flex;
+    padding-right: 5px;
+    align-items: center;
+    position: relative;
+}
+.award ul li i {
+    font-size: 13px;
+    color: #595959;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+.introBottom {
+    width: 100%;
+    height: 102px;
+}
+
+.introBottom p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #595959;
+}
+
+/* 작가 정보 */
+.writerInfo {
+    width: 100%;
+    height: auto;
+}
+
+.writerBox {
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    border-radius: 20px;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.writerName {
+    width: 94%;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.writerName h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    display: flex;
+}
+
+.writerName h3 span {
+    color: #595959;
+    font-weight: 400;
+    margin-right: 4px;
+}
+
+.writerName h3 div {
+    
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.writerName h3 div img {
+    width: 100%;
+    height: 100%;
+}
+
+.writerName > div {
+    width: 83px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 4px;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #292929;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.writerName > div > img {
+    width: 14px;
+    height: 15px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+.writerName > div:hover {
+    background-color: #f2f2f2;
+}
+
+.writerJob {
+    width: 94%;
+    height: 45px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.writerJob > div {
+    width: 82px;
+    height: 38px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #595959;
+    font-size: 13px;
+    text-align: center;
+    line-height: 19px;
+    border-radius: 20px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.writerinfo {
+    width: 94%;
+    height: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.writerPhoto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.writerPhoto img {
+    width: 100px;
+    height: 125px;
+}
+
+.writerInfoMain {
+    width: 650px;
+    height: auto;
+    overflow: visible;
+}
+
+.writerInfoText {
+    width: 100%;
+    height: auto;
+}
+
+.writerInfoText > p {
+    width: 100%;
+    height: 69px;
+    font-size: 15px;
+    line-height: 23px;
+    overflow: hidden;
+    color: #595959;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    transition: all 0.3s;
+}
+
+.showBtn {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.showBtn  > span {
+    font-size:14px;
+    color:#767676;
+    cursor: pointer;    
+    text-decoration: underline;        
+}
+.showBtn > span > i{
+   font-size:12px;
+   padding:2px;
+   border:1px solid #ddd;
+   border-radius: 50%;
+   background-color: #fff;   
+   margin-left: 5px;              
+}
+.showBtn > span:last-of-type{
+    display: none;
+}
+
+.writerAther {
+    width: 94%;
+    height: 207px;
+    margin-top: 25px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.writerAther::-webkit-scrollbar {
+    height: 5px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+.writerAther::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1;
+    border-radius: 10px;
+}
+
+.writerAther ul {
+    width: 1080px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.writerAther ul li {
+    width: 100px;
+    height: 99%;
+}
+
+.writerAther ul li img {
+    width: 100%;
+    height: 80%;
+}
+
+.writerAther ul li span {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 3줄까지만 보여줌 */
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+}
+
+
+/* 목차/책 속으로/출판사 서평 */
+.bookInfoSub {
+    width: 100%;
+    height: auto;
+}
+
+.bookInfoSub > div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.bookInfoIndex span {
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+}
+
+.bookInfoSub p {
+    width: 100%;
+    height: 130px;
+    font-size: 15px;
+    line-height: 23px;
+    overflow: hidden;
+    color: #595959;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    transition: all 0.3s;
+    background-color: #fff;
+}
+
+
+/* 기본 정보 */
+.bookInfoBasic {
+    width: 100%;
+    height: 325px;
+}
+
+.bookInfoBasic div{
+    width: 100%;
+    height: 276px;
+    padding: 18px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.bookInfoBasic div th {
+    padding:  12px 70px 12px 10px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    font-weight: 500;
+    vertical-align: top;
+}
+
+.bookInfoBasic div td {
+    padding: 12px 10px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #767676;
+    font-weight: 400;
+    vertical-align: top;
+}
+
+/* Klover리뷰 */
+.KloverReview {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.reviewTop {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.reviewTopRight {
+    width: 340px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.reviewTopRight > span {
+    font-size: 13px;
+    line-height: 19px;
+    color: #767676;
+}
+
+.reviewTopRight > div {
+    width: 100px;
+    height: 38px;
+    padding: 7px;
+    color: #fff;
+    background-color: #5055b1;
+    border: 1px solid #5055b1;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.reviewTopRight > div img {
+    width: 15px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.reviewMainBox {
+    width: 100%;
+    height: 280px;
+    background-color: #f7f7f7;
+    border: 1px solid #d5d5d5;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.reviewMainBox > div {
+    width: 50%;
+    height: 85%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.reviewMainBox_L {
+    border-right: 1px solid #d5d5d5;;
+}
+
+.reviewMainBox div span {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.reviewMainBox .cloverTop {
+    width: 150px;
+    height: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reviewMainBox .cloverTop img {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+.reviewMainBox .cloverTop > span:first-of-type {
+    font-size: 20px;
+    color: #3c9a17;
+    font-weight: 700;
+    margin-left: 3px;
+    padding-top: 7px;
+}
+
+.reviewMainBox .cloverTop > span:last-of-type {
+    font-size: 14px;
+    color:#767676;
+    font-weight: 400;
+    padding-top: 12px;
+    margin-left: 5px;
+}
+
+.reviewMainBox .klover_box {
+    width:80%;
+    height:20px;
+    margin:10px 0;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.reviewMainBox .klover_box img {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
+
+
+.reviewMainBox .klover_box > .score_bar {
+    width:180px;
+    height: 4px;
+    border:none;
+    margin-left:13px;
+    background-color: rgb(0, 0, 0, 0.06);
+    border-radius: 20px;
+    display: block;
+}
+.reviewMainBox .klover_box > .score_bar .score_bar1 {
+    width:85%;
+    height:100%;
+    background-color: #3c9A17;
+    border-radius: 20px;
+    display: block;
+}
+
+.reviewMainBox .klover_box > .score_bar .score_bar2 {
+    width:15%;
+    height:100%;
+    background-color: #767676;
+    border-radius: 20px;
+    display: block;
+}
+
+.klover_box span{
+    font-size: 13px;
+    line-height: 19px;
+    color: #595959;
+    margin-top: 8px;
+    margin-left: 13px;
+}
+
+.reviewMainBox_R span .reviewPurple {
+    font-size: 16px;
+    color: #474c98;
+    font-weight: 700;
+}
+
+.reviewMainBox_R span .reviewPurple:before {
+    content: " ";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/subimgs/quotes_icon");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reviewMainBox_R .box_bottom {
+    margin-top: 15px;
+    width: 306.8px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reply_score_item {
+    width: 58px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reply_score_item .replyScoreBar {
+    width: 6px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #eaeaea;
+}
+
+.replyScoreBar1 {
+    width: 100%;
+    height: 15%;
+    border-radius: 20px;
+    margin-top: 65px;
+    background-color: #767675;
+}
+
+.reply_score_item .scoreFont {
+    font-size: 13px;
+    color: #595959;
+    font-weight: 400;
+}
+
+.reply_score_item .scoreText {
+    font-size: 13px;
+    color: #595959;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.reply_score_item .scoreTextBest {
+    font-size: 13px;
+    color: rgb(80, 85, 177);
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.reply_score_item .scoreFontBest {
+    font-size: 13px;
+    background-color: rgb(80, 85, 177, 0.8);
+    color: #fff;
+    font-weight: 500;
+    padding: 0 3px;
+    border-radius: 10px;
+}
+
+.reply_score_item .replyScoreBarBest {
+    width: 6px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: #eaeaea;
+}
+
+.replyScoreBar2 {
+    width: 100%;
+    height: 45%;
+    border-radius: 20px;
+    margin-top: 40px;
+    background-color: #767675;
+}
+
+.replyScoreBar3 {
+    width: 100%;
+    height: 18%;
+    border-radius: 20px;
+    margin-top: 57px;
+    background-color: #767675;
+}
+
+.replyScoreBar4 {
+    width: 100%;
+    height: 9%;
+    border-radius: 20px;
+    margin-top: 65px;
+    background-color: #767675;
+}
+
+.replyScoreBar5 {
+    width: 100%;
+    height: 12%;
+    border-radius: 20px;
+    margin-top: 63px;
+    background-color: #767675;
+}
+
+.reviewBoxTop {
+    width: 100%;
+    height: 44px;
+    margin-top: 10px;
+}
+
+.reviewBoxTop ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.reviewBoxTop ul li {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #767676;
+    font-weight: 400;
+}
+
+.reviewBoxTop ul li:nth-child(2) {
+    color: #000;
+}
+
+.reviewBoxMain {
+    width: 100%;
+    height: auto;
+    background-color: #ffb6b6;
+}
+
+.reviewBoxMain ul {
+    width: 100%;
+    height: 100%;
+}
+
+.reviewBoxMain ul li {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.comment_header {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.badge_purple {
+    padding: 3px 7px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #767676;
+    margin-right: 5px;
+    background-color:rgba(23,23,237,0.1);
+}
+.badge_white{
+    padding: 3px 7px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    margin-right: 5px;
+    border: 1px solid #767676;
+    background-color:#fff;
+}
+
+.comment_header span{
+    font-size: 12px;
+    line-height: 18px;
+    color: #767676;
+    padding-right: 5px;
+}
+
+.commentClover {
+    width: 180px;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.commentClover img {
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+}
+
+.commentClover span {
+    padding-left: 8px;
+}
+
+.commentClover .comment_purple {
+    padding-left: 5px;
+    color: #474c98;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.commentClover .comment_purple:before {
+    content: " ";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/subimgs/quotes_icon");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.comment_contents {
+    width: 100%;
+    height: 22px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.comment_footer{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.comment_footer div {
+    width: 120px;
+    height: 100%;
+    float: right;
+
+}
+
+.comment_footer div span:first-of-type {
+    font-size: 13px;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.comment_footer div span:first-of-type:before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/subimgs/like_icon");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: top;
+    margin-right: 3px;
+}
+
+.comment_footer div span:last-of-type {
+    font-size: 13px;
+    line-height: 20px;
+    color: #767676;
+}
+
+.comment_footer div span:last-of-type:before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/subimgs/ico_reply@2x.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: top;
+    margin-right: 3px;
+}
+
+.imageBanner {
+    width: 100%;
+    height: 140px;
+}
+
+.imageBanner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* 문장수집 */
+.setenseCard {
+    width: 100%;
+    height: 460px;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.setenseCard div {
+    width: 100%;
+    height: 410px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.setenseCard ul {
+    width: 5000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.setenseCard ul li {
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.setenseCard ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.setenseCard ul li p {
+    width: 87%;
+    font-size: 14px;
+    color: #fff;
+    line-height: 22px;
+    text-align: center;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.setenseCard div::-webkit-scrollbar {
+    height: 7px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+
+.setenseCard div::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1;
+    border-radius: 10px;
+}
+
+/* 교환/반품/품절 안내 */
+.commonInfo {
+    width: 100%;
+    height: 1118px;
+    margin-bottom: 180px;
+}
+
+.commonInfoWrap {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-top: 1px solid #000;
+}
+
+.commonInfoWrap ul {
+    width: 100%;
+    height: auto;
+}
+
+.commonInfoWrap ul li {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eaeaea;
+    padding: 30px 0;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.commonInfoWrap ul li:last-child {
+    border-bottom: none;
+}
+.commonInfoTitle {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.commonInfoWrap > div {
+    padding: 24px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 19px;
+    color: #595959;
+}
