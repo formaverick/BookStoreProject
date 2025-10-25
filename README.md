@@ -2,9 +2,15 @@
 
 - 교보문고 메인/상세 페이지를 클론한 반응형 웹 프로젝트입니다. 정적 자원(HTML/CSS/JS/이미지/JSON)으로 구성되며, 일부 도서는 카카오 책 검색 API를 통해 동적으로 불러옵니다. 빌드 도구 없이 브라우저에서 바로 실행됩니다.
 
-<p align="center"><img width="642" height="921" alt="bookstore" src="https://github.com/user-attachments/assets/56c8f2b4-0dd1-453e-8ebc-15625bbf3e0e" /></p>
-<br>
-<p align="center"><img width="642" height="910" alt="image" src="https://github.com/user-attachments/assets/f01bb804-1b53-4f8d-9c9a-148b4a8c4899" /></p>
+<p align="center">
+  <table>
+    <tr>
+      <td><img width="642" height="921" src="https://github.com/user-attachments/assets/56c8f2b4-0dd1-453e-8ebc-15625bbf3e0e" /></td>
+      <td><img width="642" height="910" src="https://github.com/user-attachments/assets/f01bb804-1b53-4f8d-9c9a-148b4a8c4899" /></td>
+    </tr>
+  </table>
+</p>
+
 
 
 **데모 페이지**
