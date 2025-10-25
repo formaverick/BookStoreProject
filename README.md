@@ -16,6 +16,8 @@
 
 ## 🖥️ 데모 페이지
 
+🔗 **배포 링크:** [https://formaverick.github.io/BookStoreProject/](https://formaverick.github.io/BookStoreProject/)
+
 - 메인: `index.html`  
 - 상세(서브): `sub.html`
 
